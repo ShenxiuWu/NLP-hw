@@ -10,5 +10,5 @@ Quick View:
 
 5_2.py: Tag prediction using maximum likelihood estimates for transitions and emissions, Viterbi algorithm
 
-6.py: Replace the rare words with different informative patterns, improved Viterbi
+6.py & 6_multiTag.py: Replace the rare words with different informative patterns, improved Viterbi
 algorithm performance

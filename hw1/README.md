@@ -1,4 +1,4 @@
-# NLP hw1 - Named Entity tagger with Viterbi algorithm
+# NLP hw1 - Named Entity tagger with the Viterbi algorithm
 
 Quick View:
 

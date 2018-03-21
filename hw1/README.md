@@ -27,7 +27,7 @@ a. If the word is seen in training data (present in the wordStd dictionary, whic
   4. Update max(probability) and arg max if needed.
   
 b. If the word is not seen in the training data:
-  1. Calculate emission = dic['_RARE_'][tag].
+  1. Calculate emission = wordStd['_RARE_'][tag].
   2. Calculate q(y<sub>i</sub>|y<sub>i-2</sub>, y<sub>i-1</sub>) = trigram_counts[trigram])/float(bigram_counts[bigram]. Note: y<sub>i-2</sub> = ∗, y<sub>i-1</sub> = ∗ for the first word of each sentence
   3. Set probability = emission × transition
   4. Update max(probability) if needed, arg max = _RARE_

@@ -20,8 +20,8 @@ Summary: The target of the whole programming codes is to to build a trigram HMM 
 
 (For each line in the [input_file]):
 
-a. If the word is seen in training data (present in the wordCal dictionary, which contains the ratio of each tag of each word.), for each of the possible tags of the word:
-  1. Calculate emission = wordCal[word][tag]
+a. If the word is seen in training data (present in the wordStd dictionary, which contains the max tag ratio one of each word in wordCal. wordCal contains the ratio of each tag of each word.), for the highest possible tag of the word:
+  1. Calculate emission = wordStd[word][tag]
   2. Calculate transition = trigram_counts[trigram])/float(bigram_counts[bigram] Note: y<sub>i-2</sub> = *, y<sub>i-1</sub> = * for the first word of each sentence.
   3. Set probability = emission x transition
   4. Update max(probability) and arg max if needed.
